@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>registration form</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label>First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="FN"
+                placeholder="Ex:Bala Kishore"
+                size="20"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Last Name</label></td>
+            <td>
+              <input type="text" name="LN" placeholder="Ex:Poojari" size="20" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Mobile Number</label></td>
+            <td>
+              <input type="tel" name="" placeholder="987-789-1234" size="20" />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Email</label></td>
+            <td>
+              <input
+                type="Email"
+                name="mail"
+                size="20"
+                placeholder="Ex:bala@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Password</label></td>
+            <td>
+              <input
+                type="Password"
+                name="Pwd"
+                size="20"
+                placeholder="min 5 characters"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Confirm Pasword</label></td>
+            <td>
+              <input
+                type="Password"
+                name="cfpwd"
+                size="20"
+                placeholder="min 5 characters"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>DOB</label></td>
+            <td><input type="date" name="dob" size="20" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" />Male<input
+                type="radio"
+                name="gender"
+                value="F"
+              />Female<input type="radio" name="gender" value="C" />Custom
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select Country</label></td>
+            <td>
+              <select name="country">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="CHINA">CHINA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Upload Picture</label></td>
+            <td><input type="file" name="pic" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" name="" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <label>Select Course</label>
+        <select>
+          <option value="JFS">Java Full Stack</option>
+          <option value="PFS">Python Full Stack</option>
+          <option value="CJ">Core Java</option>
+          <option value="CP">Core Python</option></select
+        ><br />
+        <label>Delivery Mode</label>
+        <input type="checkbox" name="mode1" value="ON" />ONLINE
+        <input type="checkbox" name="mode2" value="OFF" />OFFLINE<br />
+        <label>Comments</label><br />
+        <textarea rows="4" cols="40"></textarea>
+      </fieldset>
+      <input
+        type="image"
+        name="submit"
+        src="asset/submit.jpg"
+        height="40"
+        width="100"
+      />
+    </form>
+  </body>
+</html>
